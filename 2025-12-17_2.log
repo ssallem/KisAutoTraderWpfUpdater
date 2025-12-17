@@ -1,0 +1,582 @@
+2025-12-17 13:51:10.6859|INFO|KisAutoTraderWpf.App|=== KisAutoTrader 시작 ===
+2025-12-17 13:51:10.6999|INFO|KisAutoTraderWpf.App|세션 ID: d062e298efe3
+2025-12-17 13:51:10.7175|INFO|KisAutoTraderWpf.Services.SupabaseService|Supabase 초기화 완료
+2025-12-17 13:51:14.5877|INFO|KisAutoTraderWpf.App|=== KisAutoTrader 시작 ===
+2025-12-17 13:51:14.5980|INFO|KisAutoTraderWpf.App|세션 ID: 398e4626d117
+2025-12-17 13:51:14.6166|INFO|KisAutoTraderWpf.Services.SupabaseService|Supabase 초기화 완료
+2025-12-17 13:51:17.8588|INFO|KisAutoTraderWpf.App|=== KisAutoTrader 종료 ===
+2025-12-17 13:51:18.8913|INFO|KisAutoTraderWpf.App|=== KisAutoTrader 종료 ===
+2025-12-17 13:51:21.1513|INFO|KisAutoTraderWpf.App|=== KisAutoTrader 시작 ===
+2025-12-17 13:51:21.1634|INFO|KisAutoTraderWpf.App|세션 ID: 5bd19a4dfcbe
+2025-12-17 13:51:21.1801|INFO|KisAutoTraderWpf.Services.SupabaseService|Supabase 초기화 완료
+2025-12-17 13:51:24.8792|INFO|KisAutoTraderWpf.Services.AuthService|사용자 API 설정 적용: AccountNo=43581992, HtsId=ssallem
+2025-12-17 13:51:24.8792|INFO|KisAutoTraderWpf.Services.AuthService|로그인 성공: ssallem (Role: User)
+2025-12-17 13:51:25.0491|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 주기적 체크 시작 (30초 간격)
+2025-12-17 13:51:25.0491|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 13:51:25.0491|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 13:51:25.1044|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 13:51:25.1044|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 13:51:25.1044|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 13:51:25.1044|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 13:51:42.9851|INFO|KisAutoTraderWpf.Services.SupabaseService|사용자 업데이트: ssallem
+2025-12-17 13:51:42.9861|INFO|KisAutoTraderWpf.Services.AuthService|API 키 업데이트 성공: ssallem
+2025-12-17 13:51:42.9861|INFO|KisAutoTraderWpf.Services.RiskManager|리스크 데이터 강제 리셋 (환경 전환)
+2025-12-17 13:51:43.3586|ERROR|KisAutoTraderWpf.Services.SupabaseService|설정 Upsert 오류: key=trading_settings
+Postgrest.Exceptions.PostgrestException: {"code":"42501","details":null,"hint":null,"message":"new row violates row-level security policy for table \"user_settings\""}
+   at Postgrest.Helpers.MakeRequest(ClientOptions clientOptions, HttpMethod method, String url, JsonSerializerSettings serializerSettings, Object data, Dictionary`2 headers, CancellationToken cancellationToken)
+   at Postgrest.Helpers.MakeRequest[T](ClientOptions clientOptions, HttpMethod method, String url, JsonSerializerSettings serializerSettings, Object data, Dictionary`2 headers, Func`1 getHeaders, CancellationToken cancellationToken)
+   at KisAutoTraderWpf.Services.SupabaseService.UpsertSettingAsync(Int32 userId, String key, String value)
+2025-12-17 13:51:43.7197|ERROR|KisAutoTraderWpf.Services.SupabaseService|설정 Upsert 오류: key=scanner_settings
+Postgrest.Exceptions.PostgrestException: {"code":"42501","details":null,"hint":null,"message":"new row violates row-level security policy for table \"user_settings\""}
+   at Postgrest.Helpers.MakeRequest(ClientOptions clientOptions, HttpMethod method, String url, JsonSerializerSettings serializerSettings, Object data, Dictionary`2 headers, CancellationToken cancellationToken)
+   at Postgrest.Helpers.MakeRequest[T](ClientOptions clientOptions, HttpMethod method, String url, JsonSerializerSettings serializerSettings, Object data, Dictionary`2 headers, Func`1 getHeaders, CancellationToken cancellationToken)
+   at KisAutoTraderWpf.Services.SupabaseService.UpsertSettingAsync(Int32 userId, String key, String value)
+2025-12-17 13:51:43.7207|INFO|KisAutoTraderWpf.Services.SupabaseService|사용자 설정 저장 완료: userId=2
+2025-12-17 13:51:46.0758|INFO|KisAutoTraderWpf.Services.AuthService|로그아웃: ssallem
+2025-12-17 13:51:46.0758|INFO|KisAutoTraderWpf.App|로그아웃 - 로그인 창으로 이동
+2025-12-17 13:51:46.0758|INFO|KisAutoTraderWpf.Services.ScannerService|스캐너 중지
+2025-12-17 13:51:46.0758|INFO|KisAutoTraderWpf.Services.ExecutorService|Executor 중지
+2025-12-17 13:51:46.0810|INFO|KisAutoTraderWpf.Services.WsClient|WebSocket 연결 해제
+2025-12-17 13:51:46.0810|INFO|KisAutoTraderWpf.Services.ApiClient|토큰 자동 갱신 비활성화
+2025-12-17 13:51:46.0810|INFO|KisAutoTraderWpf.App|=== KisAutoTrader 종료 ===
+2025-12-17 13:51:47.7791|INFO|KisAutoTraderWpf.App|=== KisAutoTrader 시작 ===
+2025-12-17 13:51:47.7907|INFO|KisAutoTraderWpf.App|세션 ID: df3a967d1029
+2025-12-17 13:51:47.8082|INFO|KisAutoTraderWpf.Services.SupabaseService|Supabase 초기화 완료
+2025-12-17 13:51:49.9294|INFO|KisAutoTraderWpf.Services.AuthService|사용자 API 설정 적용: AccountNo=43581992, HtsId=ssallem
+2025-12-17 13:51:49.9294|INFO|KisAutoTraderWpf.Services.AuthService|로그인 성공: ssallem (Role: User)
+2025-12-17 13:51:50.1386|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 주기적 체크 시작 (30초 간격)
+2025-12-17 13:51:50.1386|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 13:51:50.1386|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 13:51:50.3857|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 13:51:50.3857|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 13:51:50.3857|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 13:51:50.3857|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 13:51:52.5380|INFO|KisAutoTraderWpf.Services.ApiClient|토큰 발급 성공. 만료: 2025-12-18 13:51:52
+2025-12-17 13:51:52.5508|INFO|KisAutoTraderWpf.Services.ApiClient|WebSocket 접속키 발급 성공
+2025-12-17 13:51:52.5676|INFO|KisAutoTraderWpf.Services.WsClient|WebSocket 연결 성공
+2025-12-17 13:51:52.5676|INFO|KisAutoTraderWpf.Services.WsClient|체결통보 구독
+2025-12-17 13:51:52.6426|INFO|KisAutoTraderWpf.Services.ExecutorService|[로드] 씨피시스템 BuyTime 초기화 (재시작으로 인한 TimeBasedExit 방지)
+2025-12-17 13:51:52.6426|INFO|KisAutoTraderWpf.Services.ExecutorService|보유 종목 1개 로드 완료
+2025-12-17 13:51:53.0233|DEBUG|KisAutoTraderWpf.Services.SupabaseService|만료된 재매수 차단 삭제 완료
+2025-12-17 13:51:53.2127|DEBUG|KisAutoTraderWpf.Services.SupabaseService|활성 재매수 차단 0건 로드
+2025-12-17 13:51:53.2127|INFO|KisAutoTraderWpf.Services.RiskManager|일일 손익 복원: +20,364원 (거래 25건)
+2025-12-17 13:51:53.2127|INFO|KisAutoTraderWpf.Services.ExecutorService|Executor 시작
+2025-12-17 13:51:53.7744|INFO|KisAutoTraderWpf.Services.ScannerService|스캐너 시작
+2025-12-17 13:51:54.7680|INFO|KisAutoTraderWpf.Services.ExecutorService|[동기화] 보유 종목 1개
+2025-12-17 13:51:55.7672|INFO|KisAutoTraderWpf.Services.ExecutorService|[손절] 조건 충족: 씨피시스템 (현재가: 4,245, 손절가: 4,267)
+2025-12-17 13:51:56.2315|INFO|KisAutoTraderWpf.Services.ExecutorService|[손절] 조건 충족: 씨피시스템 (현재가: 4,245, 손절가: 4,267)
+2025-12-17 13:51:56.2315|INFO|KisAutoTraderWpf.Services.ExecutorService|[매도 스킵] 이미 매도 진행 중: 413630
+2025-12-17 13:51:57.2518|INFO|KisAutoTraderWpf.Services.ApiClient|매도 주문 성공: 413630 56주 @ 시장가
+2025-12-17 13:51:57.4487|INFO|KisAutoTraderWpf.Services.RiskManager|거래 기록: -3,640원 (일일 누적: +16,724원)
+2025-12-17 13:51:57.6398|INFO|KisAutoTraderWpf.Services.SupabaseService|재매수 차단 저장: 씨피시스템 (413630)
+2025-12-17 13:51:57.6398|INFO|KisAutoTraderWpf.Services.RiskManager|재매수 차단: 씨피시스템 (30분)
+2025-12-17 13:51:57.6467|INFO|Trade|매도|413630|씨피시스템|56|4245|손절|-3640.0000
+2025-12-17 13:51:57.6467|INFO|KisAutoTraderWpf.Services.ExecutorService|손절 체결: 씨피시스템 56주 @ 4,245원 (손익: -3,640원)
+2025-12-17 13:51:57.7443|INFO|KisAutoTraderWpf.Services.ExecutorService|[손절] 조건 충족: 씨피시스템 (현재가: 4,235, 손절가: 4,267)
+2025-12-17 13:51:57.7443|INFO|KisAutoTraderWpf.Services.ExecutorService|[매도 스킵] 보유하지 않은 종목: 413630
+2025-12-17 13:51:58.7516|INFO|KisAutoTraderWpf.Services.ExecutorService|[손절] 조건 충족: 씨피시스템 (현재가: 4,235, 손절가: 4,267)
+2025-12-17 13:51:58.7516|INFO|KisAutoTraderWpf.Services.ExecutorService|[매도 스킵] 보유하지 않은 종목: 413630
+2025-12-17 13:52:00.8685|INFO|KisAutoTraderWpf.Services.ExecutorService|[동기화] 보유 종목 0개
+2025-12-17 13:52:20.1443|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 13:52:20.1443|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 13:52:20.1617|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 13:52:20.1617|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 13:52:20.1617|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 13:52:20.1617|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 13:52:50.1470|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 13:52:50.1470|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 13:52:50.3560|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 13:52:50.3560|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 13:52:50.3560|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 13:52:50.3560|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 13:53:20.1493|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 13:53:20.1493|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 13:53:20.1663|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 13:53:20.1663|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 13:53:20.1663|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 13:53:20.1663|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 13:53:50.1441|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 13:53:50.1441|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 13:53:50.1596|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 13:53:50.1596|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 13:53:50.1596|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 13:53:50.1596|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 13:54:20.1365|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 13:54:20.1365|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 13:54:20.1531|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 13:54:20.1531|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 13:54:20.1531|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 13:54:20.1531|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 13:54:50.1316|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 13:54:50.1316|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 13:54:50.1487|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 13:54:50.1487|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 13:54:50.1487|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 13:54:50.1487|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 13:55:20.1291|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 13:55:20.1291|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 13:55:20.3462|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 13:55:20.3462|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 13:55:20.3462|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 13:55:20.3462|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 13:55:50.1206|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 13:55:50.1206|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 13:55:50.1377|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 13:55:50.1377|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 13:55:50.1377|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 13:55:50.1377|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 13:56:20.1188|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 13:56:20.1188|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 13:56:20.3333|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 13:56:20.3333|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 13:56:20.3333|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 13:56:20.3333|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 13:56:30.9599|INFO|KisAutoTraderWpf.Services.WsClient|체결가 구독: 251340
+2025-12-17 13:56:30.9599|INFO|KisAutoTraderWpf.Services.ScannerService|[후보 발견] KODEX 코스닥150선물인버스(251340) - 볼린저돌파 + 상승추세
+2025-12-17 13:56:31.4241|INFO|KisAutoTraderWpf.Services.ApiClient|매수 주문 실패: 파생ETF 미 신청(선택확인서 미 징구) 계좌는 파생ETF 거래가 불가합니다.
+2025-12-17 13:56:31.4241|INFO|KisAutoTraderWpf.Services.ExecutorService|매수 실패 (파생ETF 미 신청(선택확인서 미 징구) 계좌는 파생ETF 거래가 불가합니다.) - 30초 후 재시도: KODEX 코스닥150선물인버스
+2025-12-17 13:56:32.4119|INFO|KisAutoTraderWpf.Services.WsClient|체결가 구독: 413630
+2025-12-17 13:56:32.4119|INFO|KisAutoTraderWpf.Services.ExecutorService|재매수 차단 중: 씨피시스템
+2025-12-17 13:56:32.4119|INFO|KisAutoTraderWpf.Services.ScannerService|[후보 발견] 씨피시스템(413630) - 골든크로스 + 거래량 631%
+2025-12-17 13:56:50.1117|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 13:56:50.1117|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 13:56:50.1273|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 13:56:50.1273|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 13:56:50.1273|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 13:56:50.1273|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 13:56:55.8677|INFO|KisAutoTraderWpf.Services.ExecutorService|[동기화] 보유 종목 0개
+2025-12-17 13:57:20.1008|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 13:57:20.1008|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 13:57:20.1155|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 13:57:20.1155|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 13:57:20.1155|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 13:57:20.1155|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 13:57:50.0948|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 13:57:50.0948|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 13:57:50.1122|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 13:57:50.1122|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 13:57:50.1122|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 13:57:50.1122|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 13:58:01.9236|INFO|KisAutoTraderWpf.Services.WsClient|체결가 구독: 413630
+2025-12-17 13:58:01.9245|INFO|KisAutoTraderWpf.Services.ExecutorService|재매수 차단 중: 씨피시스템
+2025-12-17 13:58:01.9245|INFO|KisAutoTraderWpf.Services.ScannerService|[후보 발견] 씨피시스템(413630) - 볼린저돌파 + 거래량 632% + 상승추세
+2025-12-17 13:58:20.1025|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 13:58:20.1025|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 13:58:20.1184|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 13:58:20.1184|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 13:58:20.1184|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 13:58:20.1184|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 13:58:50.0888|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 13:58:50.0888|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 13:58:50.0888|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 13:58:50.1040|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 13:58:50.1040|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 13:58:50.1040|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 13:59:20.0903|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 13:59:20.0903|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 13:59:20.1035|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 13:59:20.1035|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 13:59:20.1035|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 13:59:20.1035|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 13:59:50.0857|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 13:59:50.0857|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 13:59:50.1015|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 13:59:50.1015|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 13:59:50.1015|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 13:59:50.1015|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:00:20.0710|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:00:20.0710|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:00:20.0864|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:00:20.0864|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:00:20.0864|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:00:20.0864|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:00:50.0783|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:00:50.0783|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:00:50.0943|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:00:50.0943|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:00:50.0943|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:00:50.0943|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:01:20.0757|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:01:20.0757|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:01:20.0920|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:01:20.0920|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:01:20.0920|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:01:20.0920|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:01:50.0696|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:01:50.0696|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:01:50.0853|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:01:50.0853|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:01:50.0853|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:01:50.0853|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:01:57.3230|INFO|KisAutoTraderWpf.Services.ExecutorService|[동기화] 보유 종목 0개
+2025-12-17 14:02:20.0596|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:02:20.0596|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:02:20.0743|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:02:20.0743|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:02:20.0743|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:02:20.0743|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:02:29.3224|INFO|KisAutoTraderWpf.Services.WsClient|체결가 구독: 251340
+2025-12-17 14:02:29.3224|INFO|KisAutoTraderWpf.Services.ScannerService|[후보 발견] KODEX 코스닥150선물인버스(251340) - 볼린저돌파 + 상승추세
+2025-12-17 14:02:31.8593|INFO|KisAutoTraderWpf.Services.ApiClient|매수 주문 실패: 파생ETF 미 신청(선택확인서 미 징구) 계좌는 파생ETF 거래가 불가합니다.
+2025-12-17 14:02:31.8593|INFO|KisAutoTraderWpf.Services.ExecutorService|매수 실패 (파생ETF 미 신청(선택확인서 미 징구) 계좌는 파생ETF 거래가 불가합니다.) - 30초 후 재시도: KODEX 코스닥150선물인버스
+2025-12-17 14:02:50.0502|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:02:50.0502|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:02:50.0655|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:02:50.0655|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:02:50.0655|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:02:50.0655|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:02:59.6751|INFO|KisAutoTraderWpf.App|=== KisAutoTrader 시작 ===
+2025-12-17 14:02:59.6871|INFO|KisAutoTraderWpf.App|세션 ID: 49984dd07ea0
+2025-12-17 14:02:59.7038|INFO|KisAutoTraderWpf.Services.SupabaseService|Supabase 초기화 완료
+2025-12-17 14:03:03.1144|INFO|KisAutoTraderWpf.Services.AuthService|사용자 API 설정 적용: AccountNo=43581992, HtsId=ssallem
+2025-12-17 14:03:03.1144|INFO|KisAutoTraderWpf.Services.AuthService|로그인 성공: ssallem (Role: User)
+2025-12-17 14:03:03.2995|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 주기적 체크 시작 (30초 간격)
+2025-12-17 14:03:03.3008|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:03:03.3008|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:03:03.3564|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:03:03.3564|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:03:03.3564|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:03:03.3564|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:03:05.1530|INFO|KisAutoTraderWpf.Services.ApiClient|토큰 발급 성공. 만료: 2025-12-18 14:03:05
+2025-12-17 14:03:05.1664|INFO|KisAutoTraderWpf.Services.ApiClient|WebSocket 접속키 발급 성공
+2025-12-17 14:03:05.1794|INFO|KisAutoTraderWpf.Services.WsClient|WebSocket 연결 성공
+2025-12-17 14:03:05.1794|INFO|KisAutoTraderWpf.Services.WsClient|체결통보 구독
+2025-12-17 14:03:05.2343|INFO|KisAutoTraderWpf.Services.ExecutorService|보유 종목 0개 로드 완료
+2025-12-17 14:03:05.9343|DEBUG|KisAutoTraderWpf.Services.SupabaseService|만료된 재매수 차단 삭제 완료
+2025-12-17 14:03:06.1304|DEBUG|KisAutoTraderWpf.Services.SupabaseService|활성 재매수 차단 1건 로드
+2025-12-17 14:03:06.1304|INFO|KisAutoTraderWpf.Services.RiskManager|재매수 차단 목록 복원: 1건
+2025-12-17 14:03:06.1304|INFO|KisAutoTraderWpf.Services.RiskManager|일일 손익 복원: +16,724원 (거래 26건)
+2025-12-17 14:03:06.1304|INFO|KisAutoTraderWpf.Services.ExecutorService|Executor 시작
+2025-12-17 14:03:06.7310|INFO|KisAutoTraderWpf.Services.ScannerService|스캐너 시작
+2025-12-17 14:03:07.7001|INFO|KisAutoTraderWpf.Services.ExecutorService|[동기화] 보유 종목 0개
+2025-12-17 14:03:15.1966|ERROR|KisAutoTraderWpf.Services.WsClient|메시지 수신 오류
+System.Net.WebSockets.WebSocketException (0x80004005): The remote party closed the WebSocket connection without completing the close handshake.
+   at System.Net.WebSockets.ManagedWebSocket.ThrowEOFUnexpected()
+   at System.Net.WebSockets.ManagedWebSocket.EnsureBufferContainsAsync(Int32 minimumRequiredBytes, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.WebSockets.ManagedWebSocket.ReceiveAsyncPrivate[TResult](Memory`1 payloadBuffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask`1.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at KisAutoTraderWpf.Services.WsClient.ReceiveLoopAsync()
+2025-12-17 14:03:15.2044|INFO|KisAutoTraderWpf.Services.WsClient|메시지 수신 오류: The remote party closed the WebSocket connection without completing the close handshake.
+2025-12-17 14:03:20.0567|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:03:20.0567|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:03:20.0727|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:03:20.0727|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:03:20.0727|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:03:20.0727|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:03:33.2984|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:03:33.2984|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:03:33.3145|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:03:33.3145|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:03:33.3145|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:03:33.3145|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:03:35.0565|INFO|KisAutoTraderWpf.Services.ApiClient|토큰 발급 요청 제한: 31초 후 재시도 가능
+2025-12-17 14:03:35.0658|INFO|KisAutoTraderWpf.Services.WsClient|WebSocket 연결 성공
+2025-12-17 14:03:35.0658|INFO|KisAutoTraderWpf.Services.WsClient|체결통보 구독
+2025-12-17 14:03:45.0794|ERROR|KisAutoTraderWpf.Services.WsClient|메시지 수신 오류
+System.Net.WebSockets.WebSocketException (0x80004005): The remote party closed the WebSocket connection without completing the close handshake.
+   at System.Net.WebSockets.ManagedWebSocket.ThrowEOFUnexpected()
+   at System.Net.WebSockets.ManagedWebSocket.EnsureBufferContainsAsync(Int32 minimumRequiredBytes, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.WebSockets.ManagedWebSocket.ReceiveAsyncPrivate[TResult](Memory`1 payloadBuffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Threading.Tasks.ValueTask`1.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)
+--- End of stack trace from previous location ---
+   at KisAutoTraderWpf.Services.WsClient.ReceiveLoopAsync()
+2025-12-17 14:03:45.0794|INFO|KisAutoTraderWpf.Services.WsClient|메시지 수신 오류: The remote party closed the WebSocket connection without completing the close handshake.
+2025-12-17 14:03:50.0508|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:03:50.0508|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:03:50.0658|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:03:50.0658|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:03:50.0658|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:03:50.0658|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:03:51.6553|INFO|KisAutoTraderWpf.Services.AuthService|로그아웃: ssallem
+2025-12-17 14:03:51.6553|INFO|KisAutoTraderWpf.App|로그아웃 - 로그인 창으로 이동
+2025-12-17 14:03:51.6553|INFO|KisAutoTraderWpf.Services.ScannerService|스캐너 중지
+2025-12-17 14:03:51.6553|INFO|KisAutoTraderWpf.Services.ExecutorService|Executor 중지
+2025-12-17 14:03:51.6553|INFO|KisAutoTraderWpf.Services.WsClient|WebSocket 연결 해제
+2025-12-17 14:03:51.6553|INFO|KisAutoTraderWpf.Services.ApiClient|토큰 자동 갱신 비활성화
+2025-12-17 14:03:51.6699|INFO|KisAutoTraderWpf.App|=== KisAutoTrader 종료 ===
+2025-12-17 14:04:01.8122|INFO|KisAutoTraderWpf.Services.WsClient|체결가 구독: 413630
+2025-12-17 14:04:01.8122|INFO|KisAutoTraderWpf.Services.ExecutorService|재매수 차단 중: 씨피시스템
+2025-12-17 14:04:01.8122|INFO|KisAutoTraderWpf.Services.ScannerService|[후보 발견] 씨피시스템(413630) - 골든크로스 + 거래량 633%
+2025-12-17 14:04:20.0428|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:04:20.0428|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:04:20.0607|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:04:20.0607|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:04:20.0607|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:04:20.0607|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:04:50.0340|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:04:50.0340|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:04:50.0340|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:04:50.0340|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:04:50.0340|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:04:50.0340|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:05:20.0408|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:05:20.0408|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:05:20.0584|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:05:20.0584|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:05:20.0584|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:05:20.0584|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:05:50.0333|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:05:50.0333|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:05:50.0485|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:05:50.0485|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:05:50.0485|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:05:50.0485|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:06:20.0263|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:06:20.0263|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:06:20.0423|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:06:20.0423|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:06:20.0423|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:06:20.0423|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:06:50.0202|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:06:50.0202|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:06:50.2274|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:06:50.2274|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:06:50.2274|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:06:50.2274|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:06:57.8107|INFO|KisAutoTraderWpf.Services.ExecutorService|[동기화] 보유 종목 0개
+2025-12-17 14:07:20.0131|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:07:20.0131|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:07:20.0295|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:07:20.0295|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:07:20.0295|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:07:20.0295|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:07:50.0103|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:07:50.0103|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:07:50.0256|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:07:50.0256|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:07:50.0256|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:07:50.0256|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:08:20.0077|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:08:20.0077|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:08:20.0245|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:08:20.0245|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:08:20.0245|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:08:20.0245|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:08:50.0051|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:08:50.0051|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:08:50.0209|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:08:50.0209|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:08:50.0209|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:08:50.0209|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:09:19.9920|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:09:19.9920|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:09:20.0163|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:09:20.0163|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:09:20.0163|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:09:20.0163|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:09:49.9955|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:09:49.9955|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:09:50.0114|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:09:50.0114|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:09:50.0114|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:09:50.0114|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:10:19.9833|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:10:19.9833|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:10:19.9983|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:10:19.9983|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:10:19.9983|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:10:19.9983|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:10:49.9896|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:10:49.9896|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:10:50.0040|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:10:50.0040|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:10:50.0040|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:10:50.0040|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:11:19.9870|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:11:19.9870|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:11:20.0027|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:11:20.0027|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:11:20.0027|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:11:20.0027|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:11:49.9691|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:11:49.9691|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:11:49.9844|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:11:49.9844|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:11:49.9844|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:11:49.9844|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:11:58.7695|INFO|KisAutoTraderWpf.Services.ExecutorService|[동기화] 보유 종목 0개
+2025-12-17 14:12:19.9733|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:12:19.9733|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:12:19.9886|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:12:19.9886|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:12:19.9886|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:12:19.9886|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:12:49.9714|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:12:49.9714|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:12:49.9942|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:12:49.9942|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:12:49.9942|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:12:49.9942|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:13:19.9552|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:13:19.9552|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:13:19.9687|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:13:19.9687|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:13:19.9687|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:13:19.9687|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:13:32.2502|INFO|KisAutoTraderWpf.Services.WsClient|체결가 구독: 251340
+2025-12-17 14:13:32.2502|INFO|KisAutoTraderWpf.Services.ScannerService|[후보 발견] KODEX 코스닥150선물인버스(251340) - 골든크로스 + 볼린저돌파
+2025-12-17 14:13:32.7608|INFO|KisAutoTraderWpf.Services.ApiClient|매수 주문 실패: 파생ETF 미 신청(선택확인서 미 징구) 계좌는 파생ETF 거래가 불가합니다.
+2025-12-17 14:13:32.7608|INFO|KisAutoTraderWpf.Services.ExecutorService|매수 실패 (파생ETF 미 신청(선택확인서 미 징구) 계좌는 파생ETF 거래가 불가합니다.) - 30초 후 재시도: KODEX 코스닥150선물인버스
+2025-12-17 14:13:49.9617|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:13:49.9617|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:13:49.9763|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:13:49.9763|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:13:49.9763|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:13:49.9763|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:14:19.9512|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:14:19.9512|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:14:19.9664|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:14:19.9664|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:14:19.9664|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:14:19.9664|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:14:49.9514|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:14:49.9514|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:14:49.9659|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:14:49.9659|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:14:49.9659|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:14:49.9659|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:15:19.9501|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:15:19.9501|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:15:19.9674|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:15:19.9674|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:15:19.9674|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:15:19.9674|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:15:49.9410|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:15:49.9410|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:15:49.9561|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:15:49.9561|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:15:49.9561|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:15:49.9561|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:16:19.9304|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:16:19.9304|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:16:19.9304|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:16:19.9304|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:16:19.9304|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:16:19.9304|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:16:49.9340|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:16:49.9340|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:16:49.9489|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:16:49.9489|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:16:49.9489|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:16:49.9489|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:16:59.7027|INFO|KisAutoTraderWpf.Services.ExecutorService|[동기화] 보유 종목 0개
+2025-12-17 14:17:19.9255|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:17:19.9255|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:17:20.1297|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:17:20.1297|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:17:20.1297|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:17:20.1297|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:17:49.9192|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:17:49.9192|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:17:49.9354|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:17:49.9354|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:17:49.9354|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:17:49.9354|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:18:19.9125|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:18:19.9125|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:18:19.9294|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:18:19.9294|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:18:19.9294|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:18:19.9294|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:18:49.9048|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:18:49.9048|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:18:49.9203|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:18:49.9203|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:18:49.9203|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:18:49.9203|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:19:19.9128|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:19:19.9128|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:19:19.9274|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:19:19.9274|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:19:19.9274|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:19:19.9274|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:19:49.8985|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:19:49.8985|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:19:49.9134|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:19:49.9134|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:19:49.9144|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:19:49.9144|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:20:19.8907|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:20:19.8907|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:20:19.9080|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:20:19.9080|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:20:19.9080|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:20:19.9080|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:20:49.8937|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:20:49.8937|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:20:49.9099|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:20:49.9099|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:20:49.9099|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:20:49.9099|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:21:19.8960|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:21:19.8960|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:21:19.9125|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:21:19.9125|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:21:19.9125|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:21:19.9125|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:21:49.8876|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:21:49.8876|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:21:49.9021|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:21:49.9021|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:21:49.9021|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:21:49.9021|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:22:00.8089|INFO|KisAutoTraderWpf.Services.ExecutorService|[동기화] 보유 종목 0개
+2025-12-17 14:22:19.8800|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:22:19.8800|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:22:19.8976|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:22:19.8976|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:22:19.8976|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:22:19.8976|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:22:49.8801|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:22:49.8801|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:22:49.8987|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:22:49.8987|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:22:49.8987|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:22:49.8987|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:23:19.8706|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:23:19.8706|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:23:19.8846|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:23:19.8846|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:23:19.8846|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:23:19.8846|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:23:49.8668|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:23:49.8668|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:23:49.9090|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:23:49.9090|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:23:49.9090|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:23:49.9090|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:24:19.8566|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:24:19.8566|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:24:20.8934|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:24:20.8934|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:24:20.8934|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:24:20.8934|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:24:49.8500|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:24:49.8500|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:24:49.8689|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:24:49.8689|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:24:49.8689|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:24:49.8689|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:25:19.8516|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:25:19.8516|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:25:19.8753|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:25:19.8753|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:25:19.8753|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:25:19.8753|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:25:49.8535|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:25:49.8535|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:25:49.8716|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:25:49.8716|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:25:49.8716|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:25:49.8716|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
+2025-12-17 14:26:19.8446|INFO|KisAutoTraderWpf.Services.UpdateService|업데이트 확인 중... URL: https://ssallem.github.io/KisAutoTraderWpfUpdater/
+2025-12-17 14:26:19.8446|INFO|KisAutoTraderWpf.Services.UpdateService|현재 버전: 1.1.31
+2025-12-17 14:26:19.8626|INFO|KisAutoTraderWpf.Services.UpdateService|CurrentlyInstalledVersion: 1.1.31
+2025-12-17 14:26:19.8626|INFO|KisAutoTraderWpf.Services.UpdateService|FutureReleaseEntry: 1.1.31
+2025-12-17 14:26:19.8626|INFO|KisAutoTraderWpf.Services.UpdateService|ReleasesToApply Count: 0
+2025-12-17 14:26:19.8626|INFO|KisAutoTraderWpf.Services.UpdateService|최신 버전입니다.
